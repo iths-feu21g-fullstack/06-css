@@ -1,0 +1,8 @@
+.fish-collection, .fish-collection .fish-list, .fish-collection .add-fish {
+	border: 1px solid var(--border-color);
+	padding: 1em;
+}
+
+.fish-collection .selected {
+	background-color: #F9A6BB;
+}

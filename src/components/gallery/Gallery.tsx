@@ -5,16 +5,20 @@ import fish4 from './fish4.jpg'
 import './Gallery.css'
 import Image from './Image'
 
+const fishData: string[] = [
+	fish1, fish2, fish3, fish4
+]
+
 const Gallery = () => (
   <section className='gallery'>
     Gallery
     <div className='img-container'>
-      <Image src={fish1} />
-      <Image src={fish2} />
-      <Image src={fish3} />
-      <Image src={fish4} />
+		{fishData.map(fish => (
+			<Image key={fish} src={fish} />
+		))}
     </div>
   </section>
 );
+// URL till bilderna är unik, fungerar att använda som key - den här gången
 
 export default Gallery
