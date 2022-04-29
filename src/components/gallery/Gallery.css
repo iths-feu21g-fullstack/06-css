@@ -1,12 +1,13 @@
 .gallery {
-	border: 1px solid gray;
+	border: 1px solid var(--border-color);
 	padding: 1em;
 }
 
+/* Använder styled components i stället
 .gallery img {
 	width: 150px;
 	height: 150px;
-}
+} */
 
 .img-container {
 	display: flex;
